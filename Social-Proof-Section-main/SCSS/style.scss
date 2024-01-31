@@ -1,0 +1,344 @@
+@import "./mixin";
+@import "./variables";
+@font-face {
+  font-family: "Spartan";
+  src: url("../assets/fonts/Spartan-VariableFont_wght.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan";
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.main_div {
+  @include flex_display(space-around, row);
+  background: url("../assets/images/bg-pattern-top-mobile.svg") no-repeat top
+    left;
+
+  position: relative;
+}
+
+.first_part {
+  width: 30vw;
+  margin: 1rem -15rem;
+  @include flex_display(center, column);
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-left: -5rem;
+  h1 {
+    color: $Dark_Magenta;
+    padding: 0;
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+
+    span {
+      font-size: 5rem;
+    }
+  }
+  p {
+    color: $Dark_Grayish_Magenta;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2.5rem;
+  }
+}
+
+.second_part {
+  margin-top: 5rem;
+  margin-right: -10rem;
+  @include flex_display(center, column);
+  .main_container {
+    @include flex_display(center, column);
+    background-color: rgba(236, 196, 236, 0.274);
+    padding: 1rem 8rem;
+    border-radius: 1.2rem;
+    margin: 0.5rem 0;
+
+    &:nth-child(1) {
+      margin-right: 16rem;
+    }
+
+    &:nth-child(2) {
+      padding: 1rem 6.6rem;
+      margin-right: 5rem;
+    }
+
+    &:nth-child(3) {
+      padding: 1rem 7.8rem;
+      margin-right: -6rem;
+    }
+
+    .image_container {
+      @include flex_display(center, row);
+      * {
+        padding: 0 0.5rem;
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      color: $Dark_Magenta;
+      font-weight: 700;
+    }
+  }
+}
+
+.third_part {
+  width: 100%;
+  @include flex_display(space-around, row);
+  position: absolute;
+  top: calc(100vh - 35vh);
+  left: 0;
+  padding: 0 2rem;
+
+  .card_container {
+    position: relative;
+    width: 42rem;
+    height: 28rem;
+    @include flex_display(center, column);
+    background-color: $Dark_Magenta;
+    border-radius: 1.2rem;
+    margin: 0 1rem;
+    padding: 0 4rem;
+
+    &:nth-child(1) {
+      top: -4rem;
+    }
+    &:nth-child(2) {
+      top: -2rem;
+    }
+
+    .details {
+      @include flex_display(flex-start, row);
+      width: 100%;
+      margin-bottom: 2rem;
+      img {
+        border-radius: 50%;
+        width: 3rem;
+      }
+      h1 {
+        color: white;
+        align-self: flex-start;
+        margin-left: 2rem;
+        line-height: 3rem;
+        font-size: 1.4rem;
+        &::after {
+          content: "Verified Buyer";
+          display: block;
+          margin-top: -1.2rem;
+          color: $Soft_Pink;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    &:nth-child(2) {
+      margin: 5rem 0;
+    }
+  }
+}
+
+// media-quries
+@media (max-width: 768px) {
+  .main_div {
+    @include flex_display(space-around, column);
+    height: auto;
+    background: url("../assets/images/bg-pattern-top-mobile.svg") no-repeat top
+      right;
+    background: url("../assets/images/bg-pattern-bottom-mobile.svg") no-repeat
+      bottom right;
+  }
+
+  .first_part {
+    @include flex_display(center, column);
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    margin-left: 0;
+    margin-right: 0;
+    h1 {
+      color: $Dark_Magenta;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+    p {
+      color: $Dark_Grayish_Magenta;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+  .second_part {
+    width: 100%;
+    @include flex_display(center, column);
+    margin: 4rem 0;
+    .main_container {
+      @include flex_display(center, column);
+      background-color: rgba(236, 196, 236, 0.274);
+      padding: 2rem 12rem;
+      border-radius: 1.2rem;
+      margin: 1.5rem 0;
+
+      &:nth-child(1) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2) {
+        padding: 2rem 10.5rem;
+        margin-right: 0;
+      }
+
+      &:nth-child(3) {
+        padding: 2rem 12rem;
+        margin-right: 0;
+      }
+
+      .image_container {
+        @include flex_display(center, row);
+        * {
+          padding: 0 0.5rem;
+        }
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: $Dark_Magenta;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .third_part {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 5rem;
+    @include flex_display(center, column);
+    .card_container {
+      width: 42rem;
+      height: 25rem;
+      @include flex_display(center, column);
+      background-color: $Dark_Magenta;
+      border-radius: 1.2rem;
+      margin: 0 2rem;
+      padding: 0 5rem;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 0;
+      }
+      .details {
+        @include flex_display(flex-start, row);
+        width: 100%;
+        margin-bottom: 2rem;
+        img {
+          border-radius: 50%;
+          width: 5rem;
+        }
+        h1 {
+          color: white;
+          align-self: flex-start;
+          margin-left: 2rem;
+          line-height: 3rem;
+          &::after {
+            content: "Verified Buyer";
+            display: block;
+            margin-top: -1.2rem;
+            color: $Soft_Pink;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: white;
+      }
+
+      &:nth-child(2) {
+        margin: 5rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .second_part {
+    .main_container {
+      padding: 2rem 8rem;
+
+      &:nth-child(2) {
+        padding: 2rem 6.5rem;
+      }
+
+      &:nth-child(3) {
+        padding: 2rem 8rem;
+      }
+    }
+  }
+
+  .third_part {
+    .card_container {
+      width: 34rem;
+      height: 25rem;
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .third_part {
+    .card_container {
+      .details {
+        img {
+          width: 4rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1124px) {
+  .third_part {
+    .card_container {
+      height: 25rem;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .third_part {
+    top: calc(100vh - 48vh);
+  }
+}

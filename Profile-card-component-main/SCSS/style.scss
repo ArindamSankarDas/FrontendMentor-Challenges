@@ -1,0 +1,201 @@
+@import "./variables";
+@import "./mixin";
+
+@font-face {
+  font-family: KumbhSans;
+  src: url("../fonts/KumbhSans-Regular.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: KumbhSans;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_div {
+  @include display_flex(center);
+  width: 100vw;
+  height: 100vh;
+  background-color: $Dark_cyan;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+
+  img:first-child {
+    top: -54%;
+    left: -6%;
+    position: relative;
+    z-index: -1;
+  }
+
+  img:last-child {
+    bottom: -74%;
+    right: -2%;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.card {
+  position: absolute;
+  width: 38rem;
+  height: 42rem;
+  border-radius: 1.6rem;
+  background-color: white;
+  box-shadow: -2px 6px 21px 5px $Dark_cyan;
+
+  .container {
+    background: url("../images/bg-pattern-card.svg") no-repeat;
+    width: 100%;
+    height: 36%;
+    background-size: cover;
+    border-radius: 1.6rem 1.6rem 0 0;
+  }
+
+  .content {
+    @include display_flex(center);
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5rem;
+      left: 14.5rem;
+      width: 10rem;
+      height: 10rem;
+      background: url(../images/image-victor.jpg) no-repeat;
+      border-radius: 50%;
+      background-size: contain;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5rem;
+      left: 14.5rem;
+      width: 10rem;
+      height: 10rem;
+      background-color: white;
+      border-radius: 50%;
+      transform: scale(1.1);
+    }
+
+    h1 {
+      margin-top: 8rem;
+      margin-left: -0.5rem;
+      font-size: 2.5rem;
+      text-align: center;
+      position: relative;
+      letter-spacing: 0.2rem;
+      color: $Dark_desaturated_blue;
+
+      &::before {
+        content: "London";
+        position: absolute;
+        bottom: -3rem;
+        transform: translateX(75%);
+        font-size: 2rem;
+        color: $Dark_grayish_blue;
+      }
+
+      &::after {
+        content: "26";
+        margin-left: 1rem;
+        color: $Dark_grayish_blue;
+      }
+    }
+
+    .ratings {
+      width: 100%;
+      @include display_flex(space-around);
+      transform: translateY(9rem);
+      font-size: 1.2rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -4rem;
+        width: 100%;
+        height: 1%;
+        background-color: rgba(180, 180, 180, 0.404);
+      }
+
+      span {
+        text-align: center;
+        margin-top: -1rem;
+        color: $Dark_gray;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+
+        &:first-child:before {
+          content: "80K";
+          display: block;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 0.8rem;
+          color: $Dark_desaturated_blue;
+        }
+
+        &:nth-child(2):before {
+          content: "803K";
+          display: block;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 0.8rem;
+          color: $Dark_desaturated_blue;
+        }
+
+        &:last-child:before {
+          content: "1.4K";
+          display: block;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 0.8rem;
+          color: $Dark_desaturated_blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 32rem;
+    height: 37rem;
+    .content {
+      &::before {
+        top: -4rem;
+        left: 12.5rem;
+        width: 8rem;
+        height: 8rem;
+      }
+
+      &::after {
+        top: -4rem;
+        left: 12.5rem;
+        width: 8rem;
+        height: 8rem;
+      }
+
+      h1 {
+        margin-top: 6rem;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}

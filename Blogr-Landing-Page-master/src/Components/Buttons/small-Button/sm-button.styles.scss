@@ -1,0 +1,45 @@
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  margin: 0 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:first-child {
+    background: transparent;
+    color: var(--white-text);
+  }
+
+  &:last-child {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    background-color: var(--white-text);
+    color: var(--Light-red);
+
+    &:hover,
+    :active {
+      color: var(--white-text);
+      background-color: var(--Very-light-red);
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .btn {
+    margin: 1rem 0;
+    width: 50%;
+    &:first-child {
+      margin-top: 3rem;
+      color: black;
+      font-weight: 600;
+    }
+    &:last-child {
+      background: linear-gradient(
+        to right,
+        var(--Very-light-red),
+        var(--Light-red)
+      );
+      color: var(--white-text);
+    }
+  }
+}

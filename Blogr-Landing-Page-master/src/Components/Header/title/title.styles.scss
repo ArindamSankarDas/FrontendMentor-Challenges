@@ -1,0 +1,51 @@
+:root {
+  --white-text: #fff;
+  --Grayish-blue: hsl(240, 2%, 79%);
+  --Very-light-red: hsl(13, 100%, 72%);
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+.title_heading {
+  h1 {
+    font-size: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    color: var(--white-text);
+    padding: 0 0.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 2rem;
+    font-family: "Overpass", sans-serif;
+    color: var(--Grayish-blue);
+  }
+}
+
+.title_btn {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 875px) {
+  .title_heading {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-width: 384px) {
+  .title_heading{
+    h1{
+      font-size: 3.5rem;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- favicon end -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./SCSS/styles.css" />
+    <!-- styles end -->
+
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="details">
+        <h2 class="title">Learn to code by watching others</h2>
+        <p class="sub_title">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="registre_info">
+        <h3 class="form_title">Try it free 7 days then $20/mo. thereafter</h3>
+        <form class="form" id="form">
+          <div class="form_control">
+            <input
+              type="text"
+              id="first_name"
+              placeholder="First Name"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Err Message</small>
+          </div>
+
+          <div class="form_control">
+            <input
+              type="text"
+              id="last_name"
+              placeholder="Last Name"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Err Message</small>
+          </div>
+
+          <div class="form_control">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Err Message</small>
+          </div>
+
+          <div class="form_control">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Err Message</small>
+          </div>
+
+          <button type="submit">claim your free trial</button>
+
+          <p class="para">
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </div>
+  </body>
+
+  <script src="./JS/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

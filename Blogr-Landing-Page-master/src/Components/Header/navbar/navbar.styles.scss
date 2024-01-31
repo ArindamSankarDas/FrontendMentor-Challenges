@@ -1,0 +1,96 @@
+:root {
+  --white-text: #fff;
+  --Light-red: hsl(356, 100%, 66%);
+  --Very-light-red: hsl(13, 100%, 72%);
+}
+
+.navbar {
+  font-family: "Overpass", sans-serif;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo {
+    width: 10rem;
+    height: 4.5rem;
+    background: url(../../../assets/images/logo.svg) no-repeat;
+  }
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  position: relative;
+  left: -18%;
+  list-style: none;
+  display: flex;
+}
+
+.authentication {
+  position: relative;
+  right: -8%;
+}
+
+.nav_toggler {
+  display: none;
+}
+
+@media (max-width: 875px) {
+  .navbar {
+    position: relative;
+  }
+  .hide-menu-items {
+    display: none;
+  }
+  .nav-items {
+    width: 65vw;
+    position: absolute;
+    top: 80%;
+    z-index: 12;
+    background-color: var(--white-text);
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: -2px 2px 19px #2d313b;
+    border-radius: 1rem;
+    .links {
+      position: relative;
+      left: 0;
+      width: 100%;
+      margin-top: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .authentication {
+      width: 96%;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      border-top: 1px solid gray;
+    }
+  }
+  .nav_toggler {
+    display: inline-block;
+    width: 10%;
+    height: 25%;
+    background: url(../../../assets/images/icon-hamburger.svg) no-repeat;
+    cursor: pointer;
+  }
+
+  .toggler_close {
+    display: inline-block;
+    width: 10%;
+    height: 25%;
+    background: url(../../../assets/images/icon-close.svg) no-repeat;
+    cursor: pointer;
+  }
+}
