@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/ArindamSankarDas/TODO-app)
-- Live Site URL: [live site URL here](http://todo-app-blush-chi.vercel.app/)
+- Solution URL: [solution URL here](https://github.com/ArindamSankarDas/FrontendMentor-Challenges/tree/main/TODO-app-main)
+- Live Site URL: [live site URL here](https://bespoke-stroopwafel-1be272.netlify.app/)
 
 ## My process
 

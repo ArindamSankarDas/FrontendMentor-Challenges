@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/ArindamSankarDas/Sign-Up-Form-Component)
-- Live Site URL: [live site URL here](https://sign-up-form-component-nu.vercel.app/)
+- Solution URL: [solution URL here](https://github.com/ArindamSankarDas/FrontendMentor-Challenges/tree/main/Sign-Up-Form-Component-main)
+- Live Site URL: [live site URL here](https://cool-lamington-d821be.netlify.app/)
 
 ### Built with
 

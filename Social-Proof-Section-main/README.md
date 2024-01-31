@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://arindamsankardas.github.io/Cheatsheet-Template/)
-- Live Site URL: [live site URL](https://arindamsankardas.github.io/Social-Proof-Section/)
+- Solution URL: [solution URL](https://github.com/ArindamSankarDas/FrontendMentor-Challenges/tree/main/Social-Proof-Section-main)
+- Live Site URL: [live site URL](https://ubiquitous-moxie-1ec96e.netlify.app/)
 
 ## My process
 

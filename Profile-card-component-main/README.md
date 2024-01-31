@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://arindamsankardas.github.io/Cheatsheet-Template/)
-- Live Site URL: [live site URL](https://arindamsankardas.github.io/Profile-card-component/)
+- Solution URL: [solution URL](https://github.com/ArindamSankarDas/FrontendMentor-Challenges/tree/main/Profile-card-component-main)
+- Live Site URL: [live site URL](https://profile-card-component-theta-five.vercel.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ The major learnings which I gained through this challenge is the :
 - Being able to breakdown the challenge into small sections to make it easier to complete the task.
 - Major use of CSS Flexbox and it's importance.
 - Vast use and impact of pseudo elements and pseudo classes in CSS and CSS3.
-For example: ::before, ::after, :nth-child() and so on.
+  For example: ::before, ::after, :nth-child() and so on.
 
 ### Continued development
 

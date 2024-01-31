@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://arindamsankardas.github.io/Cheatsheet-Template/)
-- Live Site URL: [Add live site URL here](https://arindamsankardas.github.io/Huddle-Landing-Page/)
+- Solution URL: [Add solution URL here](https://github.com/ArindamSankarDas/FrontendMentor-Challenges/tree/main/Huddle-Landing-Page-main)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-challenges-griq.vercel.app/)
 
 ## My process
 
